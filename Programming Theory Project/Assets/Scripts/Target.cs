@@ -8,7 +8,7 @@ using UnityEngine;
 /// <summary>
 /// Base class for Targets
 /// </summary>
-public class Target : TheGame // Inheritance
+public class Target : TheGame // INHERITANCE
 {
     // inheritate default behaviours
 

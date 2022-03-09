@@ -8,7 +8,7 @@ using UnityEngine.AI;
 [RequireComponent(typeof(Rigidbody))]
 
 /// <summary>
-/// Base class for all moving components. It will handle movement orders given through the UserControl script.
+/// Base class for all  components. 
 /// </summary>
 public abstract class TheGame : MonoBehaviour // ABSTRACTION
 {
@@ -43,7 +43,6 @@ public abstract class TheGame : MonoBehaviour // ABSTRACTION
 
     protected void GoTo(GameObject source, GameObject target)
     {
-        // default behaviour
         if ((target != null) && (source != null))
         {
             print("Push the " +  source.name + " toward the " + target.name + " with multiplier = " + multiplier);
