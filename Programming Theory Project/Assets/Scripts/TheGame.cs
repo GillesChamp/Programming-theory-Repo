@@ -45,7 +45,7 @@ public abstract class TheGame : MonoBehaviour // ABSTRACTION
     {
         if ((target != null) && (source != null))
         {
-            print("Push the " +  source.name + " toward the " + target.name + " with multiplier = " + multiplier);
+            print("Pushing the " +  source.name + " toward the " + target.name + " with multiplier = " + multiplier);
             Vector3 direction = (target.transform.position - source.transform.position).normalized;
             myRB.AddForce(direction * multiplier/ myRB.mass, ForceMode.Impulse);
         }
