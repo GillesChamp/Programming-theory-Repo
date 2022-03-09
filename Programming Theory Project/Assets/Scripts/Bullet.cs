@@ -10,10 +10,10 @@ using UnityEngine;
 /// </summary>
 public class Bullet : TheGame // INHERITANCE
 {
-    private GameObject[] targets = new GameObject [3]; // array that will host all targets supposing they are only 3
+    private GameObject[] targets = new GameObject[3]; // array that will host all targets supposing they are only 3
 
     public override void OnMouseDown()  // POLYMORPHISM
-    {        
+    {
         Debug.Log("Clicked:" + gameObject.name);
 
         // create an array of targets in scene (supposing they have been tagged as "Target")
@@ -21,6 +21,8 @@ public class Bullet : TheGame // INHERITANCE
 
         // move the bullet toward the last target in the array
         GoTo(gameObject, targets[2]);
-        
+
     }
+
+    
 }

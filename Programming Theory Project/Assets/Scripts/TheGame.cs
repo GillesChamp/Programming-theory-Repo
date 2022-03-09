@@ -4,18 +4,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-
 [RequireComponent(typeof(Rigidbody))]
 
 /// <summary>
 /// Base class for all  components. 
 /// </summary>
-public abstract class TheGame : MonoBehaviour // ABSTRACTION
+public class TheGame : MonoBehaviour // ABSTRACTION
 {
-    
     private Rigidbody myRB;
-    private static float multiplier = 90.0f;
-    
+    private static float multiplier = 180.0f;
     public  static float Multiplier  // ENCAPSULATION
     {
         get
@@ -24,7 +21,7 @@ public abstract class TheGame : MonoBehaviour // ABSTRACTION
         }
         set 
         { 
-            if ((value > 80f) && (value < 150f) )
+            if ((value > 80f) && (value <= 250f) )
             {
                 multiplier = value;
                 print("multiplier set to: " + multiplier);
@@ -38,9 +35,8 @@ public abstract class TheGame : MonoBehaviour // ABSTRACTION
 
     private void Awake()
     {
-        myRB = GetComponent<Rigidbody>();     
+        myRB = GetComponent<Rigidbody>();       
     }
-
     protected void GoTo(GameObject source, GameObject target)
     {
         if ((target != null) && (source != null))
@@ -50,12 +46,11 @@ public abstract class TheGame : MonoBehaviour // ABSTRACTION
             myRB.AddForce(direction * multiplier/ myRB.mass, ForceMode.Impulse);
         }
     }
-
+   
     public virtual void OnMouseDown()
     {
         // default behaviour       
         Debug.Log("Clicked:" + gameObject.name);
     }
-
 }
 

@@ -12,14 +12,9 @@ public class GameManager : TheGame
 
     void Start()
     {
-       TheGame.Multiplier = 120f;
+        TheGame.Multiplier = 200f;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void setUserName()
     {
@@ -29,4 +24,5 @@ public class GameManager : TheGame
         SceneManager.LoadScene(1);
     }
 
+    
 }

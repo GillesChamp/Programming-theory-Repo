@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 28554975}
   - component: {fileID: 28554974}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -575,7 +575,7 @@ MonoBehaviour:
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1766031979}
+      - m_Target: {fileID: 1441103163}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: setUserName
         m_Mode: 1
@@ -806,10 +806,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Manager
       objectReference: {fileID: 0}
-    - target: {fileID: 8149477267171733845, guid: dd38ac3a552df054c974759f23d10b4b, type: 3}
-      propertyPath: userName
-      value: 
-      objectReference: {fileID: 627936737}
     - target: {fileID: 8149477267171733846, guid: dd38ac3a552df054c974759f23d10b4b, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -852,6 +848,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8149477267171733846, guid: dd38ac3a552df054c974759f23d10b4b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8149477267171733847, guid: dd38ac3a552df054c974759f23d10b4b, type: 3}
+      propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1124,6 +1124,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1029766349}
   m_CullTransparentMesh: 1
+--- !u!1 &1441103160 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8149477267171733844, guid: dd38ac3a552df054c974759f23d10b4b, type: 3}
+  m_PrefabInstance: {fileID: 556671067}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1441103163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441103160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 057fee10d64b67c4d962626adfe19e95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  userName: {fileID: 627936737}
 --- !u!1 &1466726736
 GameObject:
   m_ObjectHideFlags: 0
@@ -1334,17 +1352,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1766031979 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8149477267171733845, guid: dd38ac3a552df054c974759f23d10b4b, type: 3}
-  m_PrefabInstance: {fileID: 556671067}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 057fee10d64b67c4d962626adfe19e95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2135190330
 GameObject:
   m_ObjectHideFlags: 0

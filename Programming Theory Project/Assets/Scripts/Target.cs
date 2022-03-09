@@ -10,6 +10,20 @@ using UnityEngine;
 /// </summary>
 public class Target : TheGame // INHERITANCE
 {
-    // inheritate default behaviours
+    private Vector3 startPos;
+    private float k;
+
+    public void Start()
+    {
+        k= Random.Range(5, 20);
+        startPos = transform.position;
+        print("startPos: " + startPos);
+    }
+
+    public void Update()
+    {
+        transform.position = new Vector3(startPos.x - 30 + Mathf.PingPong(Time.time * k, 60), transform.position.y, transform.position.z);
+    }
+
 
 }
