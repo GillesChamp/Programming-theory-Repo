@@ -10,19 +10,17 @@ using UnityEngine;
 /// </summary>
 public class Target : TheGame // INHERITANCE
 {
-    private Vector3 startPos;
-    private float k;
-
-    public void Start()
+    private float x;
+    
+    public override void Yoyo() // POLYMORPHISM
     {
-        k= Random.Range(5, 20);
-        startPos = transform.position;
-        print("startPos: " + startPos);
+        x =  -20  + Mathf.PingPong(Time.time * phaseX, 40);
+        transform.position = new Vector3(startPos.x + x, transform.position.y , transform.position.z);       
     }
 
     public void Update()
     {
-        transform.position = new Vector3(startPos.x - 30 + Mathf.PingPong(Time.time * k, 60), transform.position.y, transform.position.z);
+        Yoyo();
     }
 
 

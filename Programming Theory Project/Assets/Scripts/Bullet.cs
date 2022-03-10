@@ -19,10 +19,7 @@ public class Bullet : TheGame // INHERITANCE
         // create an array of targets in scene (supposing they have been tagged as "Target")
         targets = GameObject.FindGameObjectsWithTag("Target");
 
-        // move the bullet toward the last target in the array
-        GoTo(gameObject, targets[2]);
-
-    }
-
-    
+        // move the bullet toward the first target in the array
+        GoTo(gameObject, targets[0]);
+    }   
 }

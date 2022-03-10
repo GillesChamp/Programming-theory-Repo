@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4389998, g: 0.4872262, b: 0.5674835, a: 1}
+  m_IndirectSpecularColor: {r: 0.43706816, g: 0.4847743, b: 0.5650386, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -314,8 +314,6 @@ Transform:
   m_LocalPosition: {x: -1.1527023, y: -0.9614376, z: -0.7640141}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 745099644}
-  - {fileID: 1004288907}
   - {fileID: 672520052}
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -335,7 +333,7 @@ GameObject:
   - component: {fileID: 672520054}
   - component: {fileID: 672520053}
   m_Layer: 0
-  m_Name: Target3
+  m_Name: Target
   m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -349,11 +347,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 672520051}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.17, z: 34.1}
-  m_LocalScale: {x: 5.3548, y: 5.3548, z: 5.3548}
+  m_LocalPosition: {x: 1.1, y: 10, z: 28.6}
+  m_LocalScale: {x: 5.3548, y: 9.3709, z: 5.3548}
   m_Children: []
   m_Father: {fileID: 389050564}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &672520053
 MonoBehaviour:
@@ -381,7 +379,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 32
   m_CollisionDetection: 0
 --- !u!65 &672520055
 BoxCollider:
@@ -531,13 +529,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.5892445, y: 0.095302604, z: -0.07026315, w: 0.79923177}
-  m_LocalPosition: {x: -79.5, y: -48.1, z: 3.6}
+  m_LocalRotation: {x: 0.6406728, y: -0.19369428, z: 0.17166772, w: 0.7228769}
+  m_LocalPosition: {x: -80.16, y: 10, z: -46.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 72.8, y: 13.6, z: 0}
+  m_LocalEulerAnglesHint: {x: 83.1, y: -30, z: 0}
 --- !u!1 &745099643
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,8 +551,8 @@ GameObject:
   - component: {fileID: 745099649}
   - component: {fileID: 745099648}
   m_Layer: 0
-  m_Name: Target1
-  m_TagString: Target
+  m_Name: Obs1
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -567,10 +565,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 745099643}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.17, z: 20.1}
-  m_LocalScale: {x: 29.62209, y: 3.6484, z: 3.6484}
+  m_LocalPosition: {x: 0, y: -5.86, z: 11.5}
+  m_LocalScale: {x: 20.133762, y: 7.75285, z: 3.6484}
   m_Children: []
-  m_Father: {fileID: 389050564}
+  m_Father: {fileID: 2067174407}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &745099645
@@ -644,7 +642,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 745099643}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2e2cbe33ec91cf4cb5f4b49a6e88991, type: 3}
+  m_Script: {fileID: 11500000, guid: f0ad77e463aa36f4e9636fbfbc8a5186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!54 &745099649
@@ -661,7 +659,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 4
   m_CollisionDetection: 0
 --- !u!1 &963194225
 GameObject:
@@ -740,7 +738,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.5175045, y: 0, z: 0, w: 0.8556805}
-  m_LocalPosition: {x: 1.2, y: 65.1, z: -45.8}
+  m_LocalPosition: {x: 1.2, y: 77.91, z: -45.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -761,8 +759,8 @@ GameObject:
   - component: {fileID: 1004288912}
   - component: {fileID: 1004288911}
   m_Layer: 0
-  m_Name: Target2
-  m_TagString: Target
+  m_Name: Obs2
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -775,10 +773,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1004288906}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.17, z: 4.2}
-  m_LocalScale: {x: 14.542826, y: 3.5252, z: 3.5252}
+  m_LocalPosition: {x: -0.8, y: -8.091436, z: -4}
+  m_LocalScale: {x: 20.541742, y: 4.31837, z: 3.5252}
   m_Children: []
-  m_Father: {fileID: 389050564}
+  m_Father: {fileID: 2067174407}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1004288908
@@ -852,7 +850,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1004288906}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2e2cbe33ec91cf4cb5f4b49a6e88991, type: 3}
+  m_Script: {fileID: 11500000, guid: f0ad77e463aa36f4e9636fbfbc8a5186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!54 &1004288912
@@ -869,7 +867,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 4
   m_CollisionDetection: 0
 --- !u!1 &1697579600
 GameObject:
@@ -962,7 +960,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1697579600}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.5, y: 3.5, z: -20.1}
+  m_LocalPosition: {x: 3.5, y: 3.5, z: -27.82}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
@@ -993,9 +991,9 @@ Rigidbody:
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 2
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!1 &1740810278
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,6 +1089,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2067174406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2067174407}
+  m_Layer: 0
+  m_Name: Obsttacles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2067174407
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067174406}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.96698, y: 11.299999, z: -0.96699524}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 745099644}
+  - {fileID: 1004288907}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2122504708
 GameObject:
